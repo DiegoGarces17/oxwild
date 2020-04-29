@@ -12,6 +12,26 @@
             "nombreprenda": "pantalon",
             "tallas": "32, 34",
             "precio": "80.000"
+        },
+        {
+            "nombreprenda": "camisa nike",
+            "tallas": "XS, S, L",
+            "precio": "50.000"
+        },
+        {
+            "nombreprenda": "pantalon",
+            "tallas": "32, 34",
+            "precio": "80.000"
+        },
+        {
+            "nombreprenda": "camisa nike",
+            "tallas": "XS, S, L",
+            "precio": "50.000"
+        },
+        {
+            "nombreprenda": "pantalon",
+            "tallas": "32, 34",
+            "precio": "80.000"
         }
     ]
 
