@@ -1,20 +1,21 @@
 import React from "react"
 import { graphql } from 'gatsby' 
 import ilustracion from "../src/imgs/primer-camisa.jpg"
-import equisd from "../src/imgs/x.png"
+import Catnav from '../src/components/categorias'
+
 export default (props) => {
     const pageData = props.data.prendasJson
     
     return(
         <div>
-            <header className="py-10 mt-4 bg-gray-800">
-                <div className="max-w-4xl mx-auto flex">
-                    
-                    <h1 className="capitalize text-6xl font-bold text-white"> {pageData.title}</h1>
+            <header className="bg-gray-800 h-48">
+                <div className="mx-auto flex h-full">
+                    <h1 className="capitalize text-6xl font-bold text-white mx-auto my-auto"> {pageData.title}</h1>
                 </div>
             </header>
-            <div className="container">
-                <nav id="store" className="w-full z-30 top-0 px-6 py-1">
+            <Catnav/>
+     <div className="container">
+            <nav id="store" className="w-full z-30 top-0 px-6 py-1">
                     <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
                         <a className="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
                             Store
@@ -33,7 +34,7 @@ export default (props) => {
                             </a>
                         </div>
                     </div>
-                </nav>
+            </nav>
                 <ul className="prendas-list">
                     {
                 pageData.items.map((item, index)=>(

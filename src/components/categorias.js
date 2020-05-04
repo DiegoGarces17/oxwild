@@ -1,7 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
-
 export default (props) =>{
     const data = useStaticQuery(graphql`
     {
@@ -22,7 +21,9 @@ export default (props) =>{
     return(
             <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
-                    <span className="font-semibold text-xl tracking-tight">Oxwild</span>
+                    <a href="/">
+                    <span className="font-semibold text-xl tracking-tight">Home</span>
+                    </a>
                 </div>
                 
                 <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
